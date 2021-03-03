@@ -30,7 +30,7 @@ Bootstrap the front-end application however you best see fit. We recommend using
 - [ ] The user can edit the status and title of a to do via the todo table.
 - [ ] The user can delete a todo via the todo table
 - [ ] The user can archive a todo (Bonus Task)
-- [ ] The user user can view a table of arhchived todos at the `/archived` endpoint (Bonus Task)
+- [ ] The user can view a table of archived todos at the `/archived` endpoint (Bonus Task)
 
 ### Tools
 - [ ] [React](https://github.com/facebook/react) for the view layer
