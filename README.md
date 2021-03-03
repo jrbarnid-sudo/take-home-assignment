@@ -1,8 +1,8 @@
 # To Do Application
 Build a full-stack "To Do" Application in TypeScript. 
 
-### Background
----
+## Background
+
 
 Models:
 ```.ts
@@ -21,8 +21,7 @@ interface Todo {
 ```
 
 
-### Front-end 
----
+## Front-end 
 The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend 
 
 ##### Requirements
@@ -41,7 +40,6 @@ The front-end should run as its own process. You're free to bootstrap the projec
 
 
 ### Back-end
----
 The back-end should run as its own process.
 
 ##### Tools
@@ -50,8 +48,7 @@ The back-end should run as its own process.
 ##### Tools
 
 
-### Operations
----
+## Operations
 - [ ] Provide a single `make run` command that will install all dependencies and start the applications
 - [ ] Provide a single `make build` command that builds the both the frontend and backend applications into Docker images and tags them as `latest` (Bonus Task)
 - [ ] Provide a single `make docker-run` command that builds both applications as Docker containers and runs them in a manner that allows them to communicate (Bonus Task)
