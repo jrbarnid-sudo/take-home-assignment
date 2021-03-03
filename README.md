@@ -3,6 +3,22 @@ Build a full-stack "To Do" Application in TypeScript.
 
 ### Background
 
+Models:
+```.ts
+enum TodoStatusEnum {
+  Active = 'Active', // the todo has is not completed
+  Inactive = 'Inactive', // the todo is completed
+  Archived = 'Archived', // the todo is archived (bonus)
+}
+
+interface Todo {
+  title: string; // the title of the todo
+  status: TodoStatusEnum; // the status of the todo
+  lastUpdatedAt: number // a unix timestamp representing the time the todo was last updated
+  createdAt: number; // a unix timestamp representing the time the todo was created
+}
+```
+
 
 ### Front-end 
 The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend 
