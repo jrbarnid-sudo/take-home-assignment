@@ -1,10 +1,8 @@
-# Todo Application
-Build a full-stack "Todo" Application in TypeScript. 
+## Task
+Your task it to build a full-stack "Todo" Application in TypeScript. There are two discrete components to this system: A web client that will allow the user to interact with the application and a back-end API that the web client interacts with to store and retrieve data. Each component should run in its own process, however the entire project should be contained in a single git repository. The system does not need to support multiple users or persist data between application restarts though several bonus tasks including adding data persistence are outlined in the sections below. The final step is packaging the application in a manner that makes starting the application in development mode easy. Work on this project at your own discretion. The completed version should take no longer than 6 hours to produce but will take significantly less for candidates familiar with the required toolchain.
 
-## Background
+The two models you will need are provided:
 
-
-Models:
 ```.ts
 enum TodoStatusEnum {
   Active = 'Active', // the todo has is not completed
@@ -19,6 +17,9 @@ interface Todo {
   createdAt: number; // a unix timestamp representing the time the todo was created
 }
 ```
+
+### Getting Started
+Fork this repository into your GitHub account. When you are finished, make a pull request back to this repository. Include a short summary of your experience completing this project in the pull request description. 
 
 ## Front-end Application
 The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend to retrieve, create, and update todos. Your application will be graded on the following criteria:
