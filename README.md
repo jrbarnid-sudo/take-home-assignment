@@ -21,7 +21,7 @@ interface Todo {
 ```
 
 
-## Front-end 
+## Front-end Application
 The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend 
 
 ##### Requirements
@@ -33,13 +33,13 @@ The front-end should run as its own process. You're free to bootstrap the projec
 - [ ] The user user can view a table of arhchived todos at the `/archived` endpoint (Bonus Task)
 
 ##### Tools
-1. [React](https://github.com/facebook/react)
-2. [Redux](https://github.com/reduxjs/redux.git)
-3. [styled-components](https://github.com/styled-components/styled-components)
-4. [Apollo GraphQL](https://github.com/apollographql/apollo-client)(Bonus)
+- [ ] [React](https://github.com/facebook/react) for the view layer
+- [ ] [Redux](https://github.com/reduxjs/redux.git) for state management
+- [ ] [styled-components](https://github.com/styled-components/styled-components) for CSS
+- [ ] [Apollo GraphQL](https://github.com/apollographql/apollo-client) for data fetching (Bonus)
 
 
-### Back-end
+## Back-end Application
 The back-end should run as its own process.
 
 ##### Tools
@@ -48,7 +48,7 @@ The back-end should run as its own process.
 ##### Tools
 
 
-## Operations
+## Operations Tasks
 - [ ] Provide a single `make run` command that will install all dependencies and start the applications
 - [ ] Provide a single `make build` command that builds the both the frontend and backend applications into Docker images and tags them as `latest` (Bonus Task)
 - [ ] Provide a single `make docker-run` command that builds both applications as Docker containers and runs them in a manner that allows them to communicate (Bonus Task)
