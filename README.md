@@ -22,7 +22,7 @@ interface Todo {
 Fork this repository into your GitHub account. When you are finished, make a pull request back to this repository. Include a short summary of your experience completing this project in the pull request description. 
 
 ## Front-end Application
-Bootstrap the front-end application however you best see fit. We recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend to retrieve, create, and update todos. Your application will be graded on the following criteria:
+Bootstrap the front-end application however you best see fit. We recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend to retrieve, create, and update todos. Style your front-end as best you see fit (this is not part of the grading). Your application will be graded on the following criteria:
 
 ### Requirements
 - [ ] The user can create a todo with a title via a form.
@@ -34,7 +34,7 @@ Bootstrap the front-end application however you best see fit. We recommend using
 
 ### Tools
 - [ ] [React](https://github.com/facebook/react) for the view layer
-- [ ] [Redux](https://github.com/reduxjs/redux.git) for state management
+- [ ] [Redux](https://github.com/reduxjs/redux.git) for state management (do not use React.useState or React.useContext)
 - [ ] [styled-components](https://github.com/styled-components/styled-components) for CSS
 - [ ] [Axios](https://github.com/axios/axios) or [Apollo GraphQL](https://github.com/apollographql/apollo-client) (Bonus Task) for data fetching 
 
