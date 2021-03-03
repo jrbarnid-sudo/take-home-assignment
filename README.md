@@ -1,17 +1,19 @@
 # To Do Application
 Build a full-stack "To Do" Application in TypeScript. 
 
-### Requirements
+### Background
+
+
+### Front-end 
+The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend 
+
+##### Requirements
 - [ ] The user can create a todo with a title via a form.
 - [ ] The user can view a table of todos.
 - [ ] The user can edit the status and title of a to do via the todo table.
 - [ ] The user can delete a todo via the todo table
 - [ ] The user can archive a todo (Bonus)
 - [ ] The user user can view a table of arhchived todos at the `/archived` endpoint (Bonus Task)
-
-
-### Front-end 
-The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend 
 
 ##### Tools
 1. [React](https://github.com/facebook/react)
