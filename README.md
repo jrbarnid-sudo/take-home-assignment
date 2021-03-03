@@ -7,7 +7,7 @@ Build a full-stack "To Do" Application in TypeScript.
 - [ ] The user can edit the status and title of a to do via the todo table.
 - [ ] The user can delete a todo via the todo table
 - [ ] The user can archive a todo (Bonus)
-- [ ] The user user can view a table of arhchived todos at the `/archived` endpoint (Bonus)
+- [ ] The user user can view a table of arhchived todos at the `/archived` endpoint (Bonus Task)
 
 
 ### Front-end 
@@ -26,8 +26,7 @@ The back-end should run as its own process.
 
 
 ### Operations
-Provide a single `make run` command that will install all dependencies and start the applications.
+- [ ] Provide a single `make run` command that will install all dependencies and start the applications
+- [ ] Provide a single `make build` command that builds the both the frontend and backend applications into Docker images and tags them as `latest` (Bonus Task)
+- [ ] Provide a single `make docker-run` command that builds both applications as Docker containers and runs them in a manner that allows them to communicate (Bonus Task)
 
-### Bonus Tasks
-1. Provide a single `make build` command that builds the both the frontend and backend applications into Docker images and tags them as `latest`.
-2. Provide a single `make docker-run` command that builds both applications as Docker containers and runs them in a manner that allows them to communicate.
