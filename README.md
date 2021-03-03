@@ -1,5 +1,5 @@
-# To Do Application
-Build a full-stack "To Do" Application in TypeScript. 
+# Todo Application
+Build a full-stack "Todo" Application in TypeScript. 
 
 ## Background
 
@@ -20,9 +20,8 @@ interface Todo {
 }
 ```
 
-
 ## Front-end Application
-The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend 
+The front-end should run as its own process. You're free to bootstrap the project however you like, but we recommend using a tool like [create-react-app](https://github.com/facebook/create-react-app). The front-end should make HTTP requests to the backend to retrieve, create, and update todos. Your application will be graded on the following criteria:
 
 ##### Requirements
 - [ ] The user can create a todo with a title via a form.
@@ -36,7 +35,7 @@ The front-end should run as its own process. You're free to bootstrap the projec
 - [ ] [React](https://github.com/facebook/react) for the view layer
 - [ ] [Redux](https://github.com/reduxjs/redux.git) for state management
 - [ ] [styled-components](https://github.com/styled-components/styled-components) for CSS
-- [ ] [Apollo GraphQL](https://github.com/apollographql/apollo-client) for data fetching (Bonus)
+- [ ] [Axios](https://github.com/axios/axios) or [Apollo GraphQL](https://github.com/apollographql/apollo-client) (Bonus Task) for data fetching 
 
 
 ## Back-end Application
@@ -44,8 +43,6 @@ The back-end should run as its own process.
 
 ##### Tools
 - [ ] [Express](https://github.com/expressjs/express) or [Koa](https://github.com/koajs/koa)
-
-##### Tools
 
 
 ## Operations Tasks
