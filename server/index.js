@@ -10,6 +10,7 @@ const typeDefs = gql`
 
   type Query {
     todos: [Todo]
+    create
   }
 `;
 
@@ -19,7 +20,10 @@ const resolvers = {
   },
 };
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+});
 
 server.listen().then(({ url }) => {
   console.log(`Listening on ${url}`);
