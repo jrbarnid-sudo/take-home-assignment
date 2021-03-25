@@ -1,17 +1,29 @@
 {
-  "name": "server",
+  "name": "correlated",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "ts-node index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrbarnid-sudo/Correlated.git"
+  },
+  "author": "Jeff Barnhart",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrbarnid-sudo/Correlated/issues"
+  },
+  "homepage": "https://github.com/jrbarnid-sudo/Correlated#readme",
   "dependencies": {
-    "apollo-server": "^2.21.2",
-    "graphql": "^15.5.0"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-cache": "^5.1.2",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "tslint": "^6.1.3"
   }
 }
