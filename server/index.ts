@@ -1,8 +1,8 @@
-const express = require("express");
-const NodeCache = require("node-cache");
+const express = require('express');
+const NodeCache = require('node-cache');
 const cache = new NodeCache();
-const { TodoStatusEnum } = require("../enums/StatusEnum");
-const bodyParser = require("body-parser");
+const { TodoStatusEnum } = require('../enums/StatusEnum');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -23,7 +23,7 @@ const verifyStatus = (req, res, next) => {
   }
 };
 
-app.post("/create", verifyStatus, async (req, res, next) => {
+app.post('/create', verifyStatus, async (req, res, next) => {
   try {
     const { title, status } = req.body;
 
@@ -42,7 +42,7 @@ app.post("/create", verifyStatus, async (req, res, next) => {
       createdAt: getEpoch(),
     });
 
-    res.json(cache.get(title));
+    res.status(200).json(cache.get(title));
   } catch (err) {
     console.log(err);
     res.status(500).json(JSON.parse(JSON.stringify(err)));
@@ -50,7 +50,7 @@ app.post("/create", verifyStatus, async (req, res, next) => {
   }
 });
 
-app.post("/update", verifyStatus, async (req, res, next) => {
+app.post('/update', verifyStatus, async (req, res, next) => {
   try {
     const { title, status } = req.body;
 
@@ -80,7 +80,7 @@ app.post("/update", verifyStatus, async (req, res, next) => {
   }
 });
 
-app.delete("/delete", async (req, res, next) => {
+app.delete('/delete', async (req, res, next) => {
   try {
     const { title } = req.body;
 
@@ -102,7 +102,7 @@ app.delete("/delete", async (req, res, next) => {
   }
 });
 
-app.get("/get", async (req, res, next) => {
+app.get('/get', async (req, res, next) => {
   try {
     const { title } = req.query;
 
@@ -124,7 +124,7 @@ app.get("/get", async (req, res, next) => {
   }
 });
 
-app.get("/getAll", async (req, res, next) => {
+app.get('/getAll', async (req, res, next) => {
   try {
     const values = cache.keys().map((k: String) => {
       return cache.get(k);
@@ -144,4 +144,4 @@ app.get("/getAll", async (req, res, next) => {
 
 app.listen(4000);
 
-console.log("Listening on port 4000");
+console.log('Listening on port 4000');
